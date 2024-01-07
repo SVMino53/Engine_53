@@ -171,125 +171,157 @@ Matrix4x4 operator*(const double& lhs, const Matrix4x4& rhs);
 // | Functions |
 // +-----------+
 
-/// <summary>
-/// Get the length of a vector 'vec'.
-/// </summary>
-/// <param name="vec">The vector you want the length of.</param>
-/// <returns>The length of the vector 'vec' as a double value.</returns>
+/**
+ * Get the length of vector 'vec'.
+ * 
+ * @param vec Vector you get the length of.
+ * 
+ * @returns Length of 'vec' as a double value.
+ */
 double Length(Vector2 vec);
 
-/// <summary>
-/// Get the length of a vector 'vec'.
-/// </summary>
-/// <param name="vec">The vector you want the length of.</param>
-/// <returns>The length of the vector 'vec' as a double value.</returns>
+/**
+ * Get the length of vector 'vec'.
+ *
+ * @param vec Vector you get the length of.
+ *
+ * @returns Length of 'vec' as a double value.
+ */
 double Length(Vector3 vec);
 
-/// <summary>
-/// Get the length of a vector 'vec'.
-/// </summary>
-/// <param name="vec">The vector you want the length of.</param>
-/// <returns>The length of the vector 'vec' as a double value.</returns>
+/**
+ * Get the length of vector 'vec'.
+ *
+ * @param vec Vector you get the length of.
+ *
+ * @returns Length of 'vec' as a double value.
+ */
 double Length(Vector4 vec);
 
-/// <summary>
-/// Get the normalized vector of a vector 'vec'.
-/// </summary>
-/// <param name="vec">The vector you want normalized.</param>
-/// <returns>A vector of length 1 with the same direction as 'vec'.</returns>
+/**
+ * Get the normalized vector of vector 'vec'.
+ *
+ * @param vec Vector you get normalized.
+ *
+ * @returns Vector of length 1 with the same direction as 'vec'.
+ */
 Vector2 Normalized(Vector2 vec);
 
-/// <summary>
-/// Get the normalized vector of a vector 'vec'.
-/// </summary>
-/// <param name="vec">The vector you want normalized.</param>
-/// <returns>A vector of length 1 with the same direction as 'vec'.</returns>
+/**
+ * Get the normalized vector of vector 'vec'.
+ *
+ * @param vec Vector you get normalized.
+ *
+ * @returns Vector of length 1 with the same direction as 'vec'.
+ */
 Vector3 Normalized(Vector3 vec);
 
-/// <summary>
-/// Get the normalized vector of a vector 'vec'.
-/// </summary>
-/// <param name="vec">The vector you want normalized.</param>
-/// <returns>A vector of length 1 with the same direction as 'vec'.</returns>
+/**
+ * Get the normalized vector of vector 'vec'.
+ *
+ * @param vec Vector you get normalized.
+ *
+ * @returns Vector of length 1 with the same direction as 'vec'.
+ */
 Vector4 Normalized(Vector4 vec);
 
-/// <summary>
-/// Get the dot product of vectors 'vec1' and 'vec2'.
-/// </summary>
-/// <param name="vec1">The left-hand side vector.</param>
-/// <param name="vec2">The right-hand side vector.</param>
-/// <returns>The dot product of 'vec1' and 'vec2' as a double value.</returns>
-double Dot(Vector2 vec1, Vector2 vec2);
+/**
+ * Get the dot product of vectors 'lhs' and 'rhs'.
+ *
+ * @param lhs Vector on the left-hand side of dot.
+ * @param rhs Vector on the right-hand side of dot.
+ *
+ * @returns Dot product of 'lhs' and 'rhs' as a double value.
+ */
+double Dot(Vector2 lhs, Vector2 rhs);
 
-/// <summary>
-/// Get the dot product of vectors 'vec1' and 'vec2'.
-/// </summary>
-/// <param name="vec1">The left-hand side vector.</param>
-/// <param name="vec2">The right-hand side vector.</param>
-/// <returns>The dot product of 'vec1' and 'vec2' as a double value.</returns>
-double Dot(Vector3 vec1, Vector3 vec2);
+/**
+ * Get the dot product of vectors 'lhs' and 'rhs'.
+ *
+ * @param lhs Vector on the left-hand side of dot.
+ * @param rhs Vector on the right-hand side of dot.
+ *
+ * @returns Dot product of 'lhs' and 'rhs' as a double value.
+ */
+double Dot(Vector3 lhs, Vector3 rhs);
 
-/// <summary>
-/// Get the dot product of vectors 'vec1' and 'vec2'.
-/// </summary>
-/// <param name="vec1">The left-hand side vector.</param>
-/// <param name="vec2">The right-hand side vector.</param>
-/// <returns>The dot product of 'vec1' and 'vec2' as a double value.</returns>
-double Dot(Vector4 vec1, Vector4 vec2);
+/**
+ * Get the dot product of vectors 'lhs' and 'rhs'.
+ *
+ * @param lhs Vector on the left-hand side of dot.
+ * @param rhs Vector on the right-hand side of dot.
+ *
+ * @returns Dot product of 'lhs' and 'rhs' as a double value.
+ */
+double Dot(Vector4 lhs, Vector4 rhs);
 
-/// <summary>
-/// Get the cross product of vectors 'vec1' and 'vec2'.
-/// The order of the vectors is important.
-/// </summary>
-/// <param name="vec1">The left-hand side vector.</param>
-/// <param name="vec2">The right-hand side vector.</param>
-/// <returns>The cross product of 'vec1' and 'vec2'.</returns>
-Vector3 Cross(Vector3 vec1, Vector3 vec2);
+/**
+ * Get the cross product of vectors 'lhs' and 'rhs'.
+ * The order of the vectors matters.
+ *
+ * @param lhs Vector on the left-hand side of cross.
+ * @param rhs Vector on the right-hand side of cross.
+ *
+ * @returns Cross product of 'lhs' and 'rhs'.
+ */
+Vector3 Cross(Vector3 lhs, Vector3 rhs);
 
-/// <summary>
-/// Get the vector from transforming vector 'vec' through transfomation
-/// matrix 'mat'.
-/// </summary>
-/// <param name="vec">The vactor to transform.</param>
-/// <param name="mat">The transformation matrix.</param>
-/// <returns>The result from transforming 'vec' through 'mat'.</returns>
+/**
+ * Get the vector from transforming vector 'vec' through transfomation
+ * matrix 'mat'.
+ *
+ * @param vec Vector to transform.
+ * @param mat Transformation matrix.
+ *
+ * @returns The result from transforming 'vec' through 'mat'.
+ */
 Vector2 MatrixTransform(Vector2 vec, Matrix2x2 mat);
 
-/// <summary>
-/// Get the vector from transforming vector 'vec' through transfomation
-/// matrix 'mat'.
-/// </summary>
-/// <param name="vec">The vactor to transform.</param>
-/// <param name="mat">The transformation matrix.</param>
-/// <returns>The result from transforming 'vec' through 'mat'.</returns>
+/**
+ * Get the vector from transforming vector 'vec' through transfomation
+ * matrix 'mat'.
+ *
+ * @param vec Vector to transform.
+ * @param mat Transformation matrix.
+ *
+ * @returns The result from transforming 'vec' through 'mat'.
+ */
 Vector3 MatrixTransform(Vector3 vec, Matrix3x3 mat);
 
-/// <summary>
-/// Get the vector from transforming vector 'vec' through transfomation
-/// matrix 'mat'.
-/// </summary>
-/// <param name="vec">The vactor to transform.</param>
-/// <param name="mat">The transformation matrix.</param>
-/// <returns>The result from transforming 'vec' through 'mat'.</returns>
+/**
+ * Get the vector from transforming vector 'vec' through transfomation
+ * matrix 'mat'.
+ *
+ * @param vec Vector to transform.
+ * @param mat Transformation matrix.
+ *
+ * @returns The result from transforming 'vec' through 'mat'.
+ */
 Vector4 MatrixTransform(Vector4 vec, Matrix4x4 mat);
 
-/// <summary>
-/// Get the transposed matrix of matrix 'mat'.
-/// </summary>
-/// <param name="mat">The matrix to transpose.</param>
-/// <returns>The transposed matrix of 'mat'.</returns>
+/**
+ * Get the transposed matrix of matrix 'mat'.
+ *
+ * @param mat Matrix to transpose.
+ *
+ * @returns Transposed matrix of 'mat'.
+ */
 Matrix2x2 Transposed(Matrix2x2 mat);
 
-/// <summary>
-/// Get the transposed matrix of matrix 'mat'.
-/// </summary>
-/// <param name="mat">The matrix to transpose.</param>
-/// <returns>The transposed matrix of 'mat'.</returns>
+/**
+ * Get the transposed matrix of matrix 'mat'.
+ *
+ * @param mat Matrix to transpose.
+ *
+ * @returns Transposed matrix of 'mat'.
+ */
 Matrix3x3 Transposed(Matrix3x3 mat);
 
-/// <summary>
-/// Get the transposed matrix of matrix 'mat'.
-/// </summary>
-/// <param name="mat">The matrix to transpose.</param>
-/// <returns>The transposed matrix of 'mat'.</returns>
+/**
+ * Get the transposed matrix of matrix 'mat'.
+ *
+ * @param mat Matrix to transpose.
+ *
+ * @returns Transposed matrix of 'mat'.
+ */
 Matrix4x4 Transposed(Matrix4x4 mat);
